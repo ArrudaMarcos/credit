@@ -78,6 +78,31 @@
 					<mainClass>com.example.CombinedCreditServicePublisher</mainClass>
 				</configuration>
 			</plugin>
+			 <plugin>
+		            <groupId>org.apache.maven.plugins</groupId>
+		            <artifactId>maven-shade-plugin</artifactId>
+		            <version>3.2.1</version>
+		            <executions>
+		                <execution>
+		                    <phase>package</phase>
+		                    <goals>
+		                        <goal>shade</goal>
+		                    </goals>
+		                    <configuration>
+		                        <artifactSet>
+		                            <excludes>
+		                                <exclude>org.springframework.boot:spring-boot-starter-logging</exclude>
+		                            </excludes>
+		                        </artifactSet>
+		                        <transformers>
+		                            <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+		                                <mainClass>com.example.CreditApplication</mainClass>  <!-- Substitua com a sua classe principal -->
+		                            </transformer>
+		                        </transformers>
+		                    </configuration>
+		                </execution>
+		            </executions>
+		        </plugin>
 		</plugins>
 	</build>
 
