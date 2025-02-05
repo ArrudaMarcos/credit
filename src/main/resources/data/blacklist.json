@@ -1,0 +1,17 @@
+[
+  {
+    "cpf": "73935416459",
+    "reason": "Default on loan",
+    "blocked": true
+  },
+  {
+    "cpf": "28070171188",
+    "reason": "Low-risk account",
+    "blocked": false
+  },
+  {
+    "cpf": "47041346406",
+    "reason": "Multiple missed payments",
+    "blocked": true
+  }
+]

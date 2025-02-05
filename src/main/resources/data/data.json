@@ -1,0 +1,18 @@
+[
+  {
+    "cpf": "35077994056",
+    "riskLevel": "medium",
+    "approvedAmount": 5000.0,
+    "approvedInstallments": 12,
+    "recommendation": "Approve with conditions",
+    "score": 600
+  },
+  {
+    "cpf": "98765432100",
+    "riskLevel": "medium",
+    "approvedAmount": 3000.0,
+    "approvedInstallments": 8,
+    "recommendation": "Approve with caution",
+    "score": 500
+  }
+]
