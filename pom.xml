@@ -12,13 +12,28 @@
 	</properties>
 
 	<dependencies>
+	    <!-- Dependência do JUnit 5 -->
+	    <dependency>
+		<groupId>org.junit.jupiter</groupId>
+		<artifactId>junit-jupiter-api</artifactId>
+		<version>5.7.0</version>
+		<scope>test</scope>
+	    </dependency>
+	
+	    <!-- Dependência do Spring Boot Test -->
+	    <dependency>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-test</artifactId>
+		<scope>test</scope>
+	    </dependency>
+
 		<!-- JAX-WS -->
 		<dependency>
 			<groupId>jakarta.xml.ws</groupId>
 			<artifactId>jakarta.xml.ws-api</artifactId>
 			<version>4.0.0</version>
 		</dependency>
-
+		
 		<!-- JSON Processing -->
 		<dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>
@@ -30,7 +45,7 @@
 			<artifactId>jaxws-rt</artifactId>
 			<version>4.0.0</version>
 		</dependency>
-
+		
 		<!-- Logging -->
 		<dependency>
 			<groupId>org.apache.logging.log4j</groupId>
